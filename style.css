@@ -1,0 +1,122 @@
+:root {
+	--gray-color: #E5E5E5;
+}
+
+body {
+	font-family: inter;
+	font-weight: 400;
+}
+
+.t-bg-gray-color {
+	background-color: var(--gray-color);
+}
+
+.t-bg-secondary-gray-color {
+	background-color: #EBF0EE;
+}
+
+.t-bg-secondary-color {
+	background-color: #36B37F;
+}
+
+.t-main-color {
+	color: #28352F;
+}
+
+.t-secondary-color {
+	color: #36B37F;
+}
+
+/* Neutrals/N800 */
+.t-thirdiary-color {
+	color: #172B4D;
+}
+
+.t-fourthiary-color {
+	color: #3A4A42;
+}
+
+.t-fifthiary-color {
+	color: #42526E;
+}
+
+.t-sixthiary-color {
+	color: #344563;
+}
+
+.t-seventhiary-color {
+	color: #36B37E;
+}
+
+.t-icon-color {
+	color: #505F79;
+}
+
+.t-fs-1 {
+	font-size: 12px;
+}
+
+.t-fs-2 {
+	font-size: 20px;
+}
+
+.t-fs-3 {
+	font-size: 24px;
+}
+
+.t-fs-4 {
+	font-size: 40px;
+}
+
+.t-fw-400 {
+	font-weight: 400;
+}
+
+.t-fw-500 {
+	font-weight: 500;
+}
+
+.t-fw-600 {
+	font-weight: 600;
+}
+
+.t-fw-700 {
+	font-weight: 700;
+}
+
+.indicator {
+	position: static;
+	width: 48px;
+	height: 4px;
+	left: 139.5px;
+	top: 121px;
+
+	/* Success/G300 */
+
+	background: #36B37E;
+	border-radius: 24px;	
+}
+
+.project-card {
+	border-radius: 8px;
+}
+
+.project-card-img {
+	border-radius: 8px;
+}
+
+.project-card-body {
+	border-radius: 8px;
+}
+ 
+.t-primary-btn:hover {
+	box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
+}
+
+.t-primary-btn:active {
+	background: #008552;
+}
+
+.language-icon {
+	top: 24px;
+}
