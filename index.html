@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan David Piza</title>
 
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -17,28 +35,31 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
-<body class="mx-3">
+<body>
     <div id="backdrop" class="backdrop w-100 h-100 t-bg-gray-color position-fixed top-0 end-0">
         <div id="overlay-menu" class="menu-overlay w-0 position-fixed d-flex flex-column top-0 end-0 bg-white px-3 overflow-hidden">
             <a class="text-decoration-none ms-auto t-fourthiary-color" href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times"></i></a>
-            <a class="overlay-menu-item text-decoration-none mb-3 t-fourthiary-color t-fw-600" href="#projects" onclick="closeNav()">Portfolio</a>
-            <a class="overlay-menu-item text-decoration-none mb-3 t-fourthiary-color t-fw-600" href="#about" onclick="closeNav()">About</a>
-            <a class="overlay-menu-item text-decoration-none mb-3 t-fourthiary-color t-fw-600" href="#contact" onclick="closeNav()">Contact</a>
+            <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600" href="#projects" onclick="closeNav()">Portfolio</a>
+            <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600" href="#about" onclick="closeNav()">About</a>
+            <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600" href="#contact" onclick="closeNav()">Contact</a>
         </div>
     </div>
-    <nav class="d-flex justify-content-between align-items-center py-2">
-        <h3 class="t-fs-2 t-main-color t-fw-600">Welcome</h3>
-        <a href="javascript:void(0)" onclick="openNav()">
+    <nav class="d-flex justify-content-between align-items-center justify-content-md-center py-2 px-3">
+        <h3 class="t-fs-3 t-main-color t-fw-600 mobile-nav-item">Welcome</h3>
+        <a href="javascript:void(0)" class="mobile-nav-item" onclick="openNav()">
             <i class="fas fa-bars text-dark"></i>
         </a>
+        <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item d-none" href="#projects">Portfolio</a>
+        <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item mx-5 d-none" href="#about">About</a>
+        <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item d-none" href="#contact">Contact</a>
     </nav>
-    <main>
-        <h1 class="text-center t-fs-4 my-4 t-fw-700">
+    <main class="main pt-4 px-3">
+        <h1 class="text-center t-fs-6 mb-4 t-fw-700">
             <span class="t-thirdiary-color">Hey there. I'm Juan </span>
             <br>
             <span class="t-secondary-color"> I'm a software developer</span>
         </h1>
-        <p class="t-thirdiary-color t-fs-2 text-center">
+        <p class="t-thirdiary-color t-fs-3 text-center">
             I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
             don’t hestiate to contact me.
         </p>
@@ -48,83 +69,104 @@
             <a class="text-decoration-none t-icon-color" href="https://www.github.com/JuanDavid31" target="_blank"><i class="mx-2 fab fa-github"></i></a>
             <a class="text-decoration-none t-icon-color" href="#" target="_blank"><i class="mx-2 fab fa-angellist"></i></a>
         </div>
+        <!-- TODO: TranslateY on hover -->
+        <div class="d-flex justify-content-center my-3">
+            <a href="#projects" class="text-decoration-none">
+                <button class="border border-1 rounded-circle">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </a>
+        </div>
     </main>
-    <div class="d-flex justify-content-center my-3">
-        <button class="border border-1 rounded-circle">
-            <i class="fas fa-chevron-down"></i>
-        </button>
-    </div>
-    <div class="cards d-flex flex-column align-items-center mb-3">
-        <h2 id="projects" class="t-fs-4 text-center t-thirdiary-color mb-0 t-fw-700">My Recent Works</h2>
+    <div class="cards d-flex flex-column align-items-center px-3">
+        <h2 id="projects" class="t-fs-6 text-center t-thirdiary-color mb-0 t-fw-700">My Recent Works</h2>
         <div class="indicator mt-4 mb-5"></div>
         <div class="card w-100 t-main-border-radius mb-3">
             <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
-            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center">
-                <h4 class="t-fourthiary-color t-fs-3 t-fw-600">Mult-Post Stories Gain+Glory</h4>
+            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
+                <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
                 <div class="project-badges my-4">
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
                 </div>
-                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 roudned-2 text-white t-fw-500">See Project</button>
+                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500" 
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
             </div>
         </div>
         <div class="card w-100 t-main-border-radius mb-3">
             <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
-            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center">
-                <h4 class="t-fourthiary-color t-fs-3 t-fw-600">Mult-Post Stories Gain+Glory</h4>
+            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
+                <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
                 <div class="project-badges my-4">
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
                 </div>
-                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 roudned-2 text-white t-fw-500">See Project</button>
+                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500">See Project</button>
             </div>
         </div>
         <div class="card w-100 t-main-border-radius mb-3">
             <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
-            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center">
-                <h4 class="t-fourthiary-color t-fs-3 t-fw-600">Mult-Post Stories Gain+Glory</h4>
+            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
+                <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
                 <div class="project-badges my-4">
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
                 </div>
-                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 roudned-2 text-white t-fw-500">See Project</button>
-            </div>
-        </div>
-        <div class="card w-100 t-main-border-radius mb-3">
-            <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
-            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center">
-                <h4 class="t-fourthiary-color t-fs-3 t-fw-600">Mult-Post Stories Gain+Glory</h4>
-                <div class="project-badges my-4">
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
-                </div>
-                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 roudned-2 text-white t-fw-500">See Project</button>
+                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500">See Project</button>
             </div>
         </div>
     </div>
-    <div class="about-me d-flex flex-column align-items-center mb-4">
-        <h2 id="about" class="t-thirdiary-color t-fw-700 text-center t-fs-4">About me</h2>
-        <p class="t-fs-2 text-center t-fifthiary-color">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content t-main-border-radius">
+            <div class="modal-body">
+                <button type="button" class="btn-close end-0 me-4 mt-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                <img src="img/Snapshoot Portfolio.png" class="img-fluid" alt="Project preview">
+                <h5 class="t-fs-5 t-fw-600 t-thirdiary-color mt-2">Keeping track of hundreds of components</h5>
+                <div class="project-badges my-3">
+                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
+                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
+                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
+                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
+                </div>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it 1960s with the 
+                releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it 1960s with the relea
+            </div>
+            <div class="modal-footer d-flex justify-content-center border-0 t-main-border-radius">
+                <button type="button" class="t-fs-2 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500">
+                  See Source <i class="fab fa-github"></i>
+                </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <div class="about-me d-flex flex-column align-items-center pt-5 px-3 mb-4 position-relative">
+        <h2 id="about" class="t-thirdiary-color t-fw-700 text-center t-fs-6">About me</h2>
+        <p class="t-fs-3 text-center t-fifthiary-color">
             I can help you build a product, feature or website Look through some of my work and experience! 
             If you like what you see and have a project you need coded, don’t hestiate to contact me.
         </p>
-        <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 roudned-2 text-white t-fw-500 mb-4">Get My Resume</button> 
+        <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500 mb-4">Get My Resume</button> 
+        <img class="position-absolute top-0 end-0" src="img/about-me-mobile-right.svg" alt="About me right image">
+        <img class="position-absolute bottom-0 start-0" src="img/about-me-mobile-left.svg" alt="About me left image">
     </div>
-    <div class="abilities ">
+    <div class="abilities px-3">
         <div class="languages py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 py-3 d-flex flex-column align-items-center">
             <div class="position-relative d-flex justify-content-center">
                 <img src="img/languages-placeholder.svg" alt="Languages placeholder">
                 <img class="position-absolute language-icon" src="img/Icon Langguage.svg" alt="Icon language">
             </div>
-            <h3 class="mb-4 t-fs-3 text-center t-fw-600 t-sixthiary-color">Languages</h3>
+            <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Languages</h3>
             <div class="abilities-badges d-flex flex-wrap justify-content-center">
                 <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Javascript</span>
                 <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Ruby</span>
@@ -134,7 +176,7 @@
         </div>
         <div class="frameworks py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 py-3 d-flex flex-column align-items-center">
             <img src="img/icon-frameworks.svg" alt="Frameworks icon">
-            <h3 class="mb-4 t-fs-3 text-center t-fw-600 t-sixthiary-color">Frameworks</h3>
+            <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Frameworks</h3>
             <div class="abilities-badges d-flex flex-wrap justify-content-center">
                 <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Bootstrap</span>
                 <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Ruby on rails</span>
@@ -145,7 +187,7 @@
         </div>
         <div class="skills py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 py-3 d-flex flex-column align-items-center">
             <img src="img/icon-skills.svg" alt="Skills icon">
-            <h3 class="mb-4 t-fs-3 text-center t-fw-600 t-sixthiary-color">Skills</h3>
+            <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Skills</h3>
             <div class="abilities-badges d-flex flex-wrap justify-content-center">
                 <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Codekit</span>
                 <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Github</span>
@@ -155,21 +197,22 @@
             </div>
         </div>
     </div>
-    <h2 id="contact" class="text-center t-fs-4 t-fw-700 t-thirdiary-color my-4">
+    <h2 id="contact" class="text-center t-fs-6 t-fw-700 t-thirdiary-color my-4 px-3">
         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
     </h2>
-    <form class="d-flex flex-column align-items-center my-4" action="mailto:juandavid0306@hotmail.com" method="post" enctype="text/plain">
+    <form class="d-flex flex-column align-items-center my-4 px-3" action="mailto:juandavid0306@hotmail.com" method="post" enctype="text/plain">
         <input class="form-control" type="text" name="name" placeholder="Full name"><br>
         <input class="form-control" type="text" name="mail" placeholder="Email address"><br>
         <textarea class="form-control" type="text" name="comment" placeholder="enter text here"></textarea><br>
-        <input class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 roudned-2 text-white t-fw-500" type="submit" value="Get in touch">
+        <input class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500" type="submit" value="Get in touch">
     </form>
-    <div class="social-media-icons d-flex justify-content-center my-4">
+    <div class="social-media-icons d-flex justify-content-center my-4 position-relative">
         <a class="text-decoration-none t-icon-color" href="https://twitter.com/jdpw31" target="_blank"><i class="mx-2 fab fa-twitter"></i></a>
         <a class="text-decoration-none t-icon-color" href="https://www.linkedin.com/in/juandavidpiza/" target="_blank"><i class="mx-2 fab fa-linkedin-in"></i></a>
         <a class="text-decoration-none t-icon-color" href="https://www.github.com/JuanDavid31" target="_blank"><i class="mx-2 fab fa-github"></i></a>
         <a class="text-decoration-none t-icon-color" href="#" target="_blank"><i class="mx-2 fab fa-angellist"></i></a>
+        <img src="img/contact-illustration-mobile.svg" class="position-absolute end-0 bottom-0" alt="Contact me illustration">
     </div>
-    <p class="t-fs-2 t-fifthiary-color text-center">juandavid0306@hotmail.com</p>
+    <p class="t-fs-3 t-fifthiary-color text-center">juandavid0306@hotmail.com</p>
 </body>
 </html>

@@ -1,6 +1,7 @@
 :root {
 	--gray-color: #E5E5E5;
-	--main-border-radius: 8px
+	--main-border-radius: 8px;
+	--secondary-border-radius: 16px
 }
 
 body {
@@ -58,14 +59,22 @@ body {
 }
 
 .t-fs-2 {
-	font-size: 20px;
+	font-size: 17px;
 }
 
 .t-fs-3 {
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .t-fs-4 {
+	font-size: 24px;
+}
+
+.t-fs-5 {
+	font-size: 32px;
+}
+
+.t-fs-6 {
 	font-size: 40px;
 }
 
@@ -95,6 +104,7 @@ body {
 	transform: translateX(100%);
 }
 
+/* TODO: User bootstrap classes */
 .menu-overlay {
 	height: 90%;
 	width: 100%;
@@ -104,8 +114,12 @@ body {
 	border-bottom-right-radius: 16px;
 }
 
-.menu-overlay .overlay-menu-item {
-	font-size: 24px;
+.main {
+	background-image: url(img/header-illsutration-mobile.svg); 
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-position-y: center;
+	background-size: cover;
 }
 
 .indicator {
@@ -119,6 +133,21 @@ body {
 
 	background: #36B37E;
 	border-radius: 24px;	
+}
+
+.modal-fullscreen {
+	width: auto;
+	height: 95%;
+	margin: .5rem;
+	padding-right: 0px;
+}
+
+.modal-fullscreen .modal-content.t-main-border-radius {
+	border-radius: var(--secondary-border-radius);
+}
+
+.modal-fullscreen .modal-footer.t-main-border-radius {
+	border-radius: var(--secondary-border-radius);
 }
  
 .t-primary-btn:hover {
@@ -136,4 +165,14 @@ body {
 .form-control:focus {
 	border-color: #36B37F;
 	box-shadow: 0 0 0 0.25rem #C5E9DA;
+}
+
+@media (min-width:425px) {
+	.mobile-nav-item {
+		display: none;
+	}
+
+	.nav-item {
+		display: block !important;
+	}
 }
