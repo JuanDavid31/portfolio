@@ -1,5 +1,6 @@
 :root {
 	--gray-color: #E5E5E5;
+	--main-border-radius: 8px
 }
 
 body {
@@ -84,6 +85,29 @@ body {
 	font-weight: 700;
 }
 
+.t-main-border-radius {
+	border-radius: var(--main-border-radius);
+}
+
+.backdrop {
+	z-index: 2;
+	transition: 0.5s;
+	transform: translateX(100%);
+}
+
+.menu-overlay {
+	height: 90%;
+	width: 100%;
+	padding-top: 10px;
+	box-shadow: 0px 48px 48px rgba(37, 47, 137, 0.08);
+	border-bottom-left-radius: 16px;
+	border-bottom-right-radius: 16px;
+}
+
+.menu-overlay .overlay-menu-item {
+	font-size: 24px;
+}
+
 .indicator {
 	position: static;
 	width: 48px;
@@ -96,18 +120,6 @@ body {
 	background: #36B37E;
 	border-radius: 24px;	
 }
-
-.project-card {
-	border-radius: 8px;
-}
-
-.project-card-img {
-	border-radius: 8px;
-}
-
-.project-card-body {
-	border-radius: 8px;
-}
  
 .t-primary-btn:hover {
 	box-shadow: 0px 8px 16px rgba(54, 179, 127, 0.24);
@@ -119,4 +131,9 @@ body {
 
 .language-icon {
 	top: 24px;
+}
+
+.form-control:focus {
+	border-color: #36B37F;
+	box-shadow: 0 0 0 0.25rem #C5E9DA;
 }
