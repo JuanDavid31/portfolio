@@ -98,7 +98,7 @@
                             <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
                         </div>
                         <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500" 
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+                            data-bs-toggle="modal" data-bs-target="#mobile-modal-1">See Project</button>
                     </div>
                 </div>
             </div>
@@ -134,13 +134,30 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullscreen">
+    <div class="modal fade px-0" id="mobile-modal-1" tabindex="-1" aria-labelledby="mobile-modal-1-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen-md-down modal-lg">
           <div class="modal-content t-main-border-radius">
+            <div class="modal-header border-0 d-none d-md-flex">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
             <div class="modal-body">
-                <button type="button" class="btn-close end-0 me-4 mt-2 position-absolute" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close end-0 me-4 mt-2 position-absolute d-md-none" data-bs-dismiss="modal" aria-label="Close"></button>
                 <img src="img/Snapshoot Portfolio.png" class="img-fluid" alt="Project preview">
-                <h5 class="t-fs-5 t-fw-600 t-thirdiary-color mt-2">Keeping track of hundreds of components</h5>
+                <div class="d-flex align-items-start">
+                    <h5 class="t-fs-5 t-fw-600 t-thirdiary-color mt-2">Keeping track of hundreds of components</h5>
+                    <div class="d-none d-lg-flex mt-2">
+                        <button class="t-fs-2 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500 visually-hidden"
+                            type="button">
+                            See Source <i class="fab fa-github"></i>
+                        </button>
+                        <button class="t-fs-2 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500 ms-3"
+                            type="button">
+                            See Source <i class="fab fa-github"></i>
+                        </button>
+                    </div>
+                </div>
+                
+
                 <div class="project-badges my-3">
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
                     <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
@@ -154,7 +171,7 @@
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                 when an unknown printer took a galley of type and scrambled it 1960s with the relea
             </div>
-            <div class="modal-footer d-flex justify-content-center border-0 t-main-border-radius">
+            <div class="modal-footer d-flex justify-content-center border-0 t-main-border-radius d-lg-none">
                 <button type="button" class="t-fs-2 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500">
                   See Source <i class="fab fa-github"></i>
                 </button>
@@ -162,7 +179,7 @@
           </div>
         </div>
       </div>
-    <div class="about-me d-flex flex-column align-items-center pt-5 px-3 mb-4 position-relative">
+    <div class="about-me d-flex flex-column align-items-center pt-5 px-3 mb-4 position-relative pt-lg-0 justify-content-center justify-content-lg-end">
         <h2 id="about" class="t-thirdiary-color t-fw-700 text-center t-fs-6">About me</h2>
         <p class="t-fs-3 text-center t-fifthiary-color t-main-container">
             I can help you build a product, feature or website Look through some of my work and <br class="d-none"> experience! 
@@ -173,8 +190,10 @@
             target="_blank">        
             <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500 mb-4">Get My Resume</button> 
         </a>
-        <img class="position-absolute top-0 end-0" src="img/about-me-mobile-right.svg" alt="About me right image">
-        <img class="position-absolute bottom-0 start-0" src="img/about-me-mobile-left.svg" alt="About me left image">
+        <img class="position-absolute top-0 end-0 d-lg-none" src="img/about-me-mobile-right.svg" alt="About me right image">
+        <img class="position-absolute bottom-0 start-0 d-lg-none" src="img/about-me-mobile-left.svg" alt="About me left image">
+        <img class="position-absolute top-0 end-0 d-none d-lg-block" src="img/about-me-desktop-right.svg" alt="About me right image">
+        <img class="position-absolute bottom-0 start-0 d-none d-lg-block" src="img/about-me-desktop-left.svg" alt="About me left image">
     </div>
     <div class="abilities px-3 px-lg-0 d-flex justify-content-center row t-main-container mx-auto">
         <div class="col-12 col-md-6 col-lg-4">
@@ -225,7 +244,8 @@
             </div>
         </div>
     </div>
-    <div class="row align-items-center t-main-container mx-auto">
+    <div class="row align-items-center t-main-container mx-auto position-relative">
+        <img src="img/contact-desktop-2.svg" class="contact-desktop-2 ms-5 position-absolute bottom-0 start-0 d-none d-lg-block" alt="Contact me illustration">
         <div class="col-md-6">
             <h2 id="contact" class="text-center t-fs-6 t-fw-700 t-thirdiary-color my-4 px-3 px-lg-0">
                 I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -247,8 +267,12 @@
         <a class="text-decoration-none t-icon-color" href="https://www.linkedin.com/in/juandavidpiza/" target="_blank"><i class="mx-2 fab fa-linkedin-in"></i></a>
         <a class="text-decoration-none t-icon-color" href="https://www.github.com/JuanDavid31" target="_blank"><i class="mx-2 fab fa-github"></i></a>
         <a class="text-decoration-none t-icon-color" href="#" target="_blank"><i class="mx-2 fab fa-angellist"></i></a>
-        <img src="img/contact-illustration-mobile.svg" class="position-absolute end-0 bottom-0" alt="Contact me illustration">
+        <img src="img/contact-illustration-mobile.svg" class="position-absolute d-lg-none end-0 bottom-0" alt="Contact me illustration">
+        <img src="img/contact-desktop-1.svg" class="position-absolute bottom-0 start-0 d-none d-lg-block" alt="Contact me illustration">
     </div>
-    <p class="t-fs-3 t-fifthiary-color text-center">juandavid0306@hotmail.com</p>
+    <p class="t-fs-3 t-fifthiary-color text-center position-relative">
+        juandavid0306@hotmail.com
+        <img src="img/contact-desktop-3.svg" class="position-absolute bottom-0 end-0 d-none d-lg-block" alt="Contact me illustration">
+    </p>
 </body>
 </html>

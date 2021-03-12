@@ -139,18 +139,11 @@ body {
 	border-radius: 24px;	
 }
 
-.modal-fullscreen {
-	width: auto;
-	height: 95%;
-	margin: .5rem;
-	padding-right: 0px;
-}
-
-.modal-fullscreen .modal-content.t-main-border-radius {
+.modal-fullscreen-md-down .modal-content.t-main-border-radius {
 	border-radius: var(--secondary-border-radius);
 }
 
-.modal-fullscreen .modal-footer.t-main-border-radius {
+.modal-fullscreen-md-down .modal-footer.t-main-border-radius {
 	border-radius: var(--secondary-border-radius);
 }
  
@@ -191,6 +184,15 @@ body {
 	}
 }
 
+@media (max-width: 767px) {
+	.modal-fullscreen-md-down {
+		width: auto;
+		height: 95%;
+		margin: .5rem;
+		padding-right: 0px;
+	}
+}
+
 @media (min-width: 768px) {
 	.social-media-icons i {
 		font-size: 24px;
@@ -205,6 +207,18 @@ body {
 		min-height: 560px
 	}
 
+	.modal-fullscreen-md-down .modal-content.t-main-border-radius {
+		border-radius: var(--main-border-radius);
+	}
+	
+	.modal-fullscreen-md-down .modal-footer.t-main-border-radius {
+		border-radius: var(--main-border-radius);
+	}
+
+	.btn-close {
+		background-color: #EBECF0;
+	}
+
 	.introduction {
 		background-image: none;
 	}
@@ -215,6 +229,31 @@ body {
 	.frameworks,
 	.skills {
 		min-height: 361px;
+	}
+
+	.main {
+		min-height: 1110px;
+	}
+
+	.introduction {
+		margin-top: 150px;
+	}
+
+	.modal-body .btn {
+		font-size: 15px;
+		white-space: nowrap;
+	}
+
+	.about-me {
+		min-height: 350px;
+	}
+
+	.about-me img {
+		z-index: -1;
+	}
+
+	.contact-desktop-2 {
+		width: 130px;
 	}
 
 	#contact {
