@@ -44,81 +44,93 @@
             <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600" href="#contact" onclick="closeNav()">Contact</a>
         </div>
     </div>
-    <nav class="d-flex justify-content-between align-items-center justify-content-md-center py-2 px-3">
-        <h3 class="t-fs-3 t-main-color t-fw-600 mobile-nav-item">Welcome</h3>
-        <a href="javascript:void(0)" class="mobile-nav-item" onclick="openNav()">
-            <i class="fas fa-bars text-dark"></i>
-        </a>
-        <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item d-none" href="#projects">Portfolio</a>
-        <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item mx-5 d-none" href="#about">About</a>
-        <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item d-none" href="#contact">Contact</a>
-    </nav>
+    
     <main class="main pt-4 px-3">
-        <h1 class="text-center t-fs-6 mb-4 t-fw-700">
-            <span class="t-thirdiary-color">Hey there. I'm Juan </span>
-            <br>
-            <span class="t-secondary-color"> I'm a software developer</span>
-        </h1>
-        <p class="t-thirdiary-color t-fs-3 text-center">
-            I can help you build a product, feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-            don’t hestiate to contact me.
-        </p>
-        <div class="social-media-icons d-flex justify-content-center my-4">
-            <a class="text-decoration-none t-icon-color" href="https://twitter.com/jdpw31" target="_blank"><i class="mx-2 fab fa-twitter"></i></a>
-            <a class="text-decoration-none t-icon-color" href="https://www.linkedin.com/in/juandavidpiza/" target="_blank"><i class="mx-2 fab fa-linkedin-in"></i></a>
-            <a class="text-decoration-none t-icon-color" href="https://www.github.com/JuanDavid31" target="_blank"><i class="mx-2 fab fa-github"></i></a>
-            <a class="text-decoration-none t-icon-color" href="#" target="_blank"><i class="mx-2 fab fa-angellist"></i></a>
-        </div>
-        <!-- TODO: TranslateY on hover -->
-        <div class="d-flex justify-content-center my-3">
-            <a href="#projects" class="text-decoration-none">
-                <button class="border border-1 rounded-circle">
-                    <i class="fas fa-chevron-down"></i>
-                </button>
+        <nav class="d-flex justify-content-between align-items-center justify-content-md-center py-2 px-3">
+            <h3 class="t-fs-3 t-main-color t-fw-600 mobile-nav-item">Welcome</h3>
+            <a href="javascript:void(0)" class="mobile-nav-item" onclick="openNav()">
+                <i class="fas fa-bars text-dark"></i>
             </a>
+            <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item d-none" href="#projects">Portfolio</a>
+            <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item mx-5 d-none" href="#about">About</a>
+            <a class="t-fs-4 text-decoration-none mb-3 t-fourthiary-color t-fw-600 nav-item d-none" href="#contact">Contact</a>
+        </nav>
+        <div class="introduction">
+            <h1 class="text-center t-fs-6 mb-4 t-fw-700">
+                <span class="t-thirdiary-color">Hey there. I'm Juan </span>
+                <br>
+                <span class="t-secondary-color"> I'm a software developer</span>
+            </h1>
+            <p class="t-thirdiary-color t-fs-3 text-center">
+                I can help you build a product, feature or website <br class="d-none d-md-block d-lg-none"> look through some of my  <br class="d-none d-lg-block"> 
+                work and experience! If you like what you see and have a project you need coded, <br class="d-none d-md-block">
+                don’t hestiate to contact me.
+            </p>
+            <div class="social-media-icons d-flex justify-content-center my-4">
+                <a class="text-decoration-none t-icon-color" href="https://twitter.com/jdpw31" target="_blank"><i class="mx-2 fab fa-twitter"></i></a>
+                <a class="text-decoration-none t-icon-color" href="https://www.linkedin.com/in/juandavidpiza/" target="_blank"><i class="mx-2 fab fa-linkedin-in"></i></a>
+                <a class="text-decoration-none t-icon-color" href="https://www.github.com/JuanDavid31" target="_blank"><i class="mx-2 fab fa-github"></i></a>
+                <a class="text-decoration-none t-icon-color" href="#" target="_blank"><i class="mx-2 fab fa-angellist"></i></a>
+            </div>
+            <!-- TODO: TranslateY on hover -->
+            <div class="d-flex justify-content-center my-3">
+                <a href="#projects" class="text-decoration-none">
+                    <button class="border border-1 rounded-circle">
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                </a>
+            </div>
         </div>
     </main>
     <div class="cards d-flex flex-column align-items-center px-3">
         <h2 id="projects" class="t-fs-6 text-center t-thirdiary-color mb-0 t-fw-700">My Recent Works</h2>
         <div class="indicator mt-4 mb-5"></div>
-        <div class="card w-100 t-main-border-radius mb-3">
-            <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
-            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
-                <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
-                <div class="project-badges my-4">
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card w-100 t-main-border-radius mb-3">
+                    <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
+                    <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
+                        <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
+                        <div class="project-badges my-4">
+                            <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
+                            <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
+                            <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
+                            <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
+                        </div>
+                        <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500" 
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
+                    </div>
                 </div>
-                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500" 
-                    data-bs-toggle="modal" data-bs-target="#exampleModal">See Project</button>
             </div>
-        </div>
-        <div class="card w-100 t-main-border-radius mb-3">
-            <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
-            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
-                <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
-                <div class="project-badges my-4">
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card w-100 t-main-border-radius mb-3">
+                <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
+                <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
+                    <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
+                    <div class="project-badges my-4">
+                        <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
+                        <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
+                        <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
+                        <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
+                    </div>
+                    <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500">See Project</button>
                 </div>
-                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500">See Project</button>
+            </div>  
             </div>
-        </div>
-        <div class="card w-100 t-main-border-radius mb-3">
-            <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
-            <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
-                <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
-                <div class="project-badges my-4">
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
-                    <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card w-100 t-main-border-radius mb-3">
+                    <img class="t-main-border-radius img-fluid" src="https://via.placeholder.com/252x327" alt="Project preview">
+                    <div class="t-main-border-radius position-absolute bottom-0 bg-white py-3 px-1 d-flex align-items-center flex-column text-center w-100">
+                        <h4 class="t-fourthiary-color t-fs-4 t-fw-600">Mult-Post Stories Gain+Glory</h4>
+                        <div class="project-badges my-4">
+                            <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Ruby on rails</span>
+                            <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">css</span>
+                            <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">Javascript</span>
+                            <span class="t-fs-1 py-1 px-2 badge t-bg-secondary-gray-color t-fourthiary-color t-fw-600">html</span>
+                        </div>
+                        <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500">See Project</button>
+                    </div>
                 </div>
-                <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500">See Project</button>
             </div>
         </div>
     </div>
@@ -152,60 +164,84 @@
       </div>
     <div class="about-me d-flex flex-column align-items-center pt-5 px-3 mb-4 position-relative">
         <h2 id="about" class="t-thirdiary-color t-fw-700 text-center t-fs-6">About me</h2>
-        <p class="t-fs-3 text-center t-fifthiary-color">
-            I can help you build a product, feature or website Look through some of my work and experience! 
-            If you like what you see and have a project you need coded, don’t hestiate to contact me.
+        <p class="t-fs-3 text-center t-fifthiary-color t-main-container">
+            I can help you build a product, feature or website Look through some of my work and <br class="d-none"> experience! 
+            If you like what you see and have a project you need coded, <br>
+            don’t hestiate to contact me.
         </p>
-        <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500 mb-4">Get My Resume</button> 
+        <a href="https://www.linkedin.com/in/juandavidpiza/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAACsfKD0BI1UQ7AKBZw9MAE9U78c0_m6Y6DU,1614618839048)/"
+            target="_blank">        
+            <button class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500 mb-4">Get My Resume</button> 
+        </a>
         <img class="position-absolute top-0 end-0" src="img/about-me-mobile-right.svg" alt="About me right image">
         <img class="position-absolute bottom-0 start-0" src="img/about-me-mobile-left.svg" alt="About me left image">
     </div>
-    <div class="abilities px-3">
-        <div class="languages py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 py-3 d-flex flex-column align-items-center">
-            <div class="position-relative d-flex justify-content-center">
-                <img src="img/languages-placeholder.svg" alt="Languages placeholder">
-                <img class="position-absolute language-icon" src="img/Icon Langguage.svg" alt="Icon language">
-            </div>
-            <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Languages</h3>
-            <div class="abilities-badges d-flex flex-wrap justify-content-center">
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Javascript</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Ruby</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Html</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">CSS</span>
-            </div>
-        </div>
-        <div class="frameworks py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 py-3 d-flex flex-column align-items-center">
-            <img src="img/icon-frameworks.svg" alt="Frameworks icon">
-            <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Frameworks</h3>
-            <div class="abilities-badges d-flex flex-wrap justify-content-center">
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Bootstrap</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Ruby on rails</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">RSpec</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Capybara</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Selenium</span>
+    <div class="abilities px-3 px-lg-0 d-flex justify-content-center row t-main-container mx-auto">
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="abilities-card languages py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 d-flex flex-column align-items-center">
+                <div class="position-relative d-flex justify-content-center">
+                    <img src="img/languages-placeholder.svg" alt="Languages placeholder">
+                    <img class="position-absolute language-icon" src="img/Icon Langguage.svg" alt="Icon language">
+                </div>
+                <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Languages</h3>
+                <div class="abilities-badges d-flex flex-wrap justify-content-center">
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Html</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">CSS</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Javascript</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Ruby</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Java</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Kotlin</span>
+                </div>
             </div>
         </div>
-        <div class="skills py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 py-3 d-flex flex-column align-items-center">
-            <img src="img/icon-skills.svg" alt="Skills icon">
-            <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Skills</h3>
-            <div class="abilities-badges d-flex flex-wrap justify-content-center">
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Codekit</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Github</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Codepen</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Gitlab</span>
-                <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Terminal</span>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="abilities-card frameworks py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 d-flex flex-column align-items-center">
+                <img src="img/icon-frameworks.svg" alt="Frameworks icon">
+                <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Frameworks</h3>
+                <div class="abilities-badges d-flex flex-wrap justify-content-center">
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Angular</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">React</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Bootstrap</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Dropwizard</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Spring Boot</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Ruby on Rails</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">RSpec</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+            <div class="abilities-card skills py-5 t-main-border-radius t-bg-secondary-gray-color mb-3 d-flex flex-column align-items-center">
+                <img src="img/icon-skills.svg" alt="Skills icon">
+                <h3 class="mb-4 t-fs-4 text-center t-fw-600 t-sixthiary-color">Skills</h3>
+                <div class="abilities-badges d-flex flex-wrap justify-content-center">
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Github</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Gitlab</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Heroku</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">AWS</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">TDD</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Mobile First</span>
+                    <span class="badge m-1 py-1 px-2 bg-white t-seventhiary-color">Terminal</span>
+                </div>
             </div>
         </div>
     </div>
-    <h2 id="contact" class="text-center t-fs-6 t-fw-700 t-thirdiary-color my-4 px-3">
-        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-    </h2>
-    <form class="d-flex flex-column align-items-center my-4 px-3" action="mailto:juandavid0306@hotmail.com" method="post" enctype="text/plain">
-        <input class="form-control" type="text" name="name" placeholder="Full name"><br>
-        <input class="form-control" type="text" name="mail" placeholder="Email address"><br>
-        <textarea class="form-control" type="text" name="comment" placeholder="enter text here"></textarea><br>
-        <input class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500" type="submit" value="Get in touch">
-    </form>
+    <div class="row align-items-center t-main-container mx-auto">
+        <div class="col-md-6">
+            <h2 id="contact" class="text-center t-fs-6 t-fw-700 t-thirdiary-color my-4 px-3 px-lg-0">
+                I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+            </h2>    
+        </div>
+        <div class="col-md-6">
+            <form class="d-flex flex-column align-items-center my-4 px-3 px-lg-0" action="mailto:juandavid0306@hotmail.com" 
+                method="post" enctype="text/plain">
+                <input class="form-control" type="text" name="name" placeholder="Full name"><br>
+                <input class="form-control" type="text" name="mail" placeholder="Email address"><br>
+                <textarea class="form-control" type="text" name="comment" placeholder="Enter text here"></textarea><br>
+                <input class="t-fs-1 btn primary t-primary-btn t-bg-secondary-color p-2 rounded-2 text-white t-fw-500 me-lg-auto"
+                    type="submit" value="Get in touch">
+            </form>
+        </div>
+    </div>
     <div class="social-media-icons d-flex justify-content-center my-4 position-relative">
         <a class="text-decoration-none t-icon-color" href="https://twitter.com/jdpw31" target="_blank"><i class="mx-2 fab fa-twitter"></i></a>
         <a class="text-decoration-none t-icon-color" href="https://www.linkedin.com/in/juandavidpiza/" target="_blank"><i class="mx-2 fab fa-linkedin-in"></i></a>
